@@ -1,6 +1,6 @@
 # Recanto Gourmet
 
-Um site de receitas onde as pessoas podem compartilhar e acessar receitas
+O Recanto Gourmet é um website dedicado ao compartilhamento e acesso de receitas culinárias. Nele, os usuários podem compartilhar suas próprias receitas, bem como explorar uma variedade de pratos e iguarias preparadas por outros membros da comunidade. É um espaço digital onde os entusiastas da culinária podem se conectar, trocar ideias e descobrir novas inspirações gastronômicas.
 
 ## Membros da equipe
 
@@ -44,7 +44,7 @@ Dayana Priscilla N F Costa, 497091, Sistemas de Informação
 | Receita | X  | X |  X | X |
 | Comentário | X |  X  | x | x |
 
-> Lembre-se que é necessário implementar o CRUD de pelo menos duas entidades.
+
 
 ## Rotas da API REST utilizadas
 
