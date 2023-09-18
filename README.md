@@ -19,8 +19,8 @@ Dayana Priscilla N F Costa, 497091, Sistemas de Informação
 
 ## Principais funcionalidades da aplicação
 
-- Usuário não registrador poderão acessar as receitas e visualizar os comentários.
-- Usuário registrado pode adicionar, remover e editar receitas, como também avaliar e fazer comentários nas receitas.
+- Usuário não registrado poderão acessar as receitas , como também avaliar e fazer comentários nas receitas.
+- Usuário registrado pode adicionar, remover e editar receitas. E tudo que o usuário não registrado faz.
 
 
 ## Tecnologias e frameworks utilizados
