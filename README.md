@@ -42,7 +42,7 @@ Dayana Priscilla N F Costa, 497091, Sistemas de Informação
 | --- | --- | --- | --- | --- |
 | Usuário |  |  |  |  |
 | Receita | X  | X |  X | X |
-| Comentário | X |  X  | x | x |
+| Comentário | X |  X  |  |  |
 
 
 
