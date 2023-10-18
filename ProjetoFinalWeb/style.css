@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*,*::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--cl-2--);
+}
+
+body {
+    --cl-1--:#fff;
+    --cl-2--:#000;
+    --cl-3--:#65067f;
+    --cl-4--:#8e53ff;
+    --cl-5--:linear-gradient(-45deg, rgba(202, 129, 242, 0)35%, #8e53ff 100%);
+    --cl-9--:linear-gradient(180deg, rgba(202, 129, 242, 0)35%, #cfbaf6 100%);
+    --cl-6--:rgba(0,0,0,0.6);
+    --cl-7--:rgba(231, 227, 226);
+    --cl-8--:rgba(241, 238, 243, 0.259);
+    background: var(--cli-1--);
+    margin: 0;
+}
+
+
+img { 
+    max-width: 100%;
+}
+
+h1, h2, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out ;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.row{
+    display: flex;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*Navigation*/
+
+header{
+    align-items: center;
+    gap: 2em;
+    padding: 2em 0;
+    fill: var(--cl-2--);
+}
+
+nav{
+    align-items: center;
+    flex-grow: 1;
+    gap: 2em;
+}
+
+nav ul {
+    align-items: center;
+    gap: 2em;
+}
+
+.primary-links {
+    margin: auto;
+}
+
+nav a, .footer-content ul a {
+    font-weight: 500;
+    font-size: 16px;
+ 
+}
+
+nav a:hover, .footer-content ul a:hover,
+ .footer-links ul a:hover {
+    color: var(--cl-3--);
+    fill: var(--cl-3--);
+}
+/*End Navigation/*
+
+
+/*Hero Section*/
+.hero{
+    position: relative;
+    margin: 2em 0;
+    fill: var(--cl-2--);
+}
+
+.hero::after, .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 90%;
+    width: 2.5%;
+    background: var(--cl-4--);
+}
+.hero::after{
+    left: 0;
+    border-radius: 0px 50px 50px 0px;
+    -webkit-border-radius: 0px 50px 50px 0px;
+    -moz-border-radius: 0px 50px 50px 0px;
+    -ms-border-radius: 0px 50px 50px 0px;
+    -o-border-radius: 0px 50px 50px 0px;
+}
+.hero::before{
+    right: 0;
+    border-radius: 50px 0px 0px 50px;
+    -webkit-border-radius: 50px 0px 0px 50px;
+    -moz-border-radius: 50px 0px 0px 50px;
+    -ms-border-radius: 50px 0px 0px 50px;
+    -o-border-radius: 50px 0px 0px 50px;
+}
+
+.hero  .container {
+    background: url(./imgs/comida.jpg), var(--cl-7--);
+    background-repeat: no-repeat;
+    background-position: right center ;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius:50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.hero-content{
+    background: var(--cl-5--);
+    padding: 2em;  
+}
+.recipe{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    background: var(--cl-1--);
+    padding: 0.5em;
+    max-width: 135px;
+    box-shadow: 3px 3px 6px var(--cl-6--);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+
+}
+
+.recipe img {
+    max-width: 20px;
+}
+
+.hero h1 {
+    font-weight:  600;
+    font-size: clamp(35px , 5vw, 65px);
+    text-transform: capitalize;
+    padding: 0.5em 0;
+}
+
+
+p{
+    font-size: 16px;
+    color: var(--cl-2--);
+}
+
+.time{
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 2em 0;
+
+}
+
+.time .row{
+    align-items: center;
+    gap: 1em;
+}
+.hero .time .row{
+    background: var(--cl-8--);
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.time p, .profile p {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+.profile-btn{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:  space-between;
+    gap: 2em;
+    padding-top: 4em;
+  
+
+}
+
+.profile .p-img {
+    max-width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius:50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.hero h6 {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.profile .column{
+    gap: 0.5em;
+    padding-left: 15px;
+    align-items: center;
+}
+.hero a, .learn a, .insta-btn, .subscribe-input a {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--cl-2--);
+    fill:var(--cl-2--);
+    background: var(--cl-1--);
+    padding: 1.5em 2.5em;
+    align-items: center;
+    gap: 1em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+}
+.hero a:hover,
+.learn a:hover,
+.insta-btn:hover,
+.subscribe-input a:hover {
+    background: var(--cl-4--);
+    box-shadow: 3px 3px 6px var(--cl-6--);
+}
+/*End Hero Section*/
+
+/*Category*/
+.category .recipes .try{
+    padding: 2em 0;
+}
+.category-title{
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    
+}
+
+.category-title a{
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    background: var(--cl-4--);
+    padding: 0.8em 1.5em;
+    border-radius: 15px;
+    color: var(--cl-1--);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.category-title a:hover{
+    background: var(--cl-1--);
+    color: var(--cl-4--);
+    box-shadow: 3px 3px 6px var(--cl-6--);
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2em;
+    padding: 2em 0;
+   
+}
+.cat-card {
+  text-align: center;
+  background: linear-gradient(180deg, rgba(112, 130, 70, 0)0%, rgba(164, 63, 198, 0.2)100%);
+  padding: 1em;
+  margin: 10px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.cat-card:nth-of-type(2){
+    background: linear-gradient(180deg, rgba(108, 198, 63, 0)0%, rgba(164, 63, 198, 0.2)100%);
+    
+}
+.cat-card:nth-of-type(3){
+    background: linear-gradient(180deg, rgba(204, 38, 27, 0)0%, rgba(164, 63, 198, 0.2)100%);
+    
+}
+.cat-card:nth-of-type(4){
+    background: linear-gradient(180deg, rgba(248, 158, 0 , 0)0%, rgba(164, 63, 198, 0.2)100%);
+    
+}
+.cat-card:nth-of-type(5){
+    background: linear-gradient(180deg, rgba(222, 184, 135, 0)0%, rgba(164, 63, 198, 0.2)100%);
+    
+}
+.cat-card:nth-of-type(6){
+    background: linear-gradient(180deg, rgba(210, 105, 30, 0)0%, rgba(164, 63, 198, 0.2)100%);
+    
+}
+
+.cat-card img{
+    object-fit: cover;
+    width: 80px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, rgba(0, 0, 0,0.4));
+}
+.cat-card btn{
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 1.5em;
+}
+.cat-card:hover, .card:hover, instragram-cards a:hover {
+    transform:  scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+/*End Category*/
+
+/*Recipes*/
+
+.section-title{
+    text-align:  center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title p {
+    font-size: 16px;
+    padding: 1em 0;
+}
+.recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 2em;
+    padding:  2em 0;
+
+}
+
+.card{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: var(--cl-9--);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.card img{
+    object-fit: cover;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+.card h5{
+    font-weight:600 ;
+    font-size: 24px;
+    padding-top: 0.5em;
+    padding: 0.2em;
+}
+
+.card .like{
+    position: absolute;
+    top:7%;
+    right: 7%;
+    background: var(--cl-1--);
+    fill: var(--cl-4--);
+    padding: 0.5em;
+    box-shadow: 0px 5px 10px rgba(255, 99, 99, 0.2);
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius:50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out ;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+
+}
+.card .like:hover, .like .active{
+    fill: var(--cl-3--);
+}
+
+#Layer_1{
+    width: 30px;
+    height: 30px;
+}
+
+.recipes .time{
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.recipes .time .row{
+    padding: 0.5em 0.2em;
+    gap: 0.3em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/*End Recipes*/
+
+/*Learn*/
+
+.learn{
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 2em;
+    padding: 2em 0;
+
+}
+
+.learn>*{
+    flex: 1 1 25em;
+}
+
+.learn p {
+    padding: 2em 0;
+}
+
+.learn a {
+    margin-top: 2em;
+}
+
+.learn img {
+
+    justify-content: center;
+}
+
+
+/*End Learn*/
+
