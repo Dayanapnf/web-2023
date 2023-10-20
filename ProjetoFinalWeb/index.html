@@ -12,7 +12,7 @@
         <header class="row container">
             <a href="#" class="logo">
                 <img src="./imgs/logo_rc.png" alt="logo_recantoGourmet"
-                    width="150" height="80">
+                    width="250" height="100">
             </a>
             <div class="toggleMenu" onClick="toggleMenu();"> </div>
             <nav class="navigation row"></nav>
@@ -243,8 +243,6 @@
                         </svg>
                     </div>
                 </a>
-                
-                
             </div>
         </section>
         <!-- End Recipes-->
@@ -286,17 +284,20 @@
                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CxVa2AxuaPD/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" data-instgrm-version="13"></blockquote>
                     <script async src="https://platform.instagram.com/en_US/embeds.js"></script>
                 </div>
-                <a href="#" class="insta-btn row">
-                    visit our instagram
-                    <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/></svg>
-                </a>
+                <div class="insta-btn-container">
+                    <a href="#" class="insta-btn"> visit our instagram
+                        <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/></svg>
+                    </a>
+                </div>
+                
             </div>
+           
         </section>
         <!--End Instagram-->
 
         <!--Try-->
         <section class="try container">
-            <div class="try content row">
+            <div class="try-content row">
                 <h2>Try this delicius recipe to make your day</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Officiis magnam eius quis sed suscipit qui dolores eos fuga,
@@ -304,114 +305,126 @@
                     ducimus alias expedita illum?</p>
             </div>
             <div class="try-cards column">
-                <a href="#" class="cat-card">
-                    <img src="./imgs/burguer-de-picanha.jpg" alt="comida">
+                <a href="#" class="card">
+                    <img   src="./imgs/burguer-de-picanha.jpg" alt="comida">
                     <h5>Big and juicy beef cheeseBurger</h5>
                     <div class="time row">
                         <div class="row">
-                            <img src="./imgs/icons/icons8-cronômetro-50.png"
+                            <img class="icon" src="./imgs/icons/icons8-cronômetro-50.png"
                                 alt="time">
                             <p>30 minutes</p>
                         </div>
                         <div class="row">
-                            <img src="./imgs/icons/icons8-faca-e-spatchula-50.png"
+                            <img class="icon" src="./imgs/icons/icons8-faca-e-spatchula-50.png"
                             alt="talher">
                             <p>chicken</p>
                         </div>
                     </div>
                     <div class="like row active">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 30 30" width="30px"
-                            height="30px">
-                            <path
-                                d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
+                        <svg id="Layer_1" 
+                            data-name="Layer 1" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 122.88 122.88"><defs><style>.cls-1{fill:#ead3fd;}.cls-1,.cls-2{fill-rule:evenodd;}.cls-2{fill:#fff;}</style></defs><title>like-button</title>
+                            <path class="cls-1" d="M61.44,0A61.44,61.44,0,1,1,0,61.44,61.44,61.44,0,0,1,61.44,0Z"/><path class="cls-2" d="M32.5,53.39H43.06a2.18,2.18,0,0,1,2.17,2.18V84.52a2.19,2.19,0,0,1-2.17,2.18H32.5a2.19,2.19,0,0,1-2.18-2.18V55.57a2.19,2.19,0,0,1,2.18-2.18ZM60.2,31.68c1.14-5.82,10.66-.46,11.29,8.91a40.41,40.41,0,0,1-.81,9.93H84.29c5.65.23,10.59,4.28,7.1,10.93.8,2.9.92,6.3-1.24,7.65.27,4.57-1,7.41-3.37,9.65A11.42,11.42,0,0,1,85,84.63c-1.83,2.58-3.31,2-6.19,2h-23c-3.64,0-5.62-1-8-4V57C54.72,55.17,58.36,45.8,60.2,39.65v-8Z"/>
                         </svg>
                     </div>
                 </a>
-                <a href="#" class="cat-card">
-                    <img src="./imgs/icons8-instagram.svg" alt="comida">
+                <a href="#" class="card">
+                    <img   src="./imgs/burguer-de-picanha.jpg" alt="comida">
                     <h5>Big and juicy beef cheeseBurger</h5>
                     <div class="time row">
                         <div class="row">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 30 30" width="30px"
-                                height="30px">
-                                <path
-                                    d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
-                            </svg>
+                            <img class="icon" src="./imgs/icons/icons8-cronômetro-50.png"
+                                alt="time">
                             <p>30 minutes</p>
                         </div>
                         <div class="row">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 30 30" width="30px"
-                                height="30px">
-                                <path
-                                    d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
-                            </svg>
+                            <img class="icon" src="./imgs/icons/icons8-faca-e-spatchula-50.png"
+                            alt="talher">
                             <p>chicken</p>
                         </div>
                     </div>
                     <div class="like row active">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 30 30" width="30px"
-                            height="30px">
-                            <path
-                                d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
+                        <svg id="Layer_1" 
+                            data-name="Layer 1" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 122.88 122.88"><defs><style>.cls-1{fill:#ead3fd;}.cls-1,.cls-2{fill-rule:evenodd;}.cls-2{fill:#fff;}</style></defs><title>like-button</title>
+                            <path class="cls-1" d="M61.44,0A61.44,61.44,0,1,1,0,61.44,61.44,61.44,0,0,1,61.44,0Z"/><path class="cls-2" d="M32.5,53.39H43.06a2.18,2.18,0,0,1,2.17,2.18V84.52a2.19,2.19,0,0,1-2.17,2.18H32.5a2.19,2.19,0,0,1-2.18-2.18V55.57a2.19,2.19,0,0,1,2.18-2.18ZM60.2,31.68c1.14-5.82,10.66-.46,11.29,8.91a40.41,40.41,0,0,1-.81,9.93H84.29c5.65.23,10.59,4.28,7.1,10.93.8,2.9.92,6.3-1.24,7.65.27,4.57-1,7.41-3.37,9.65A11.42,11.42,0,0,1,85,84.63c-1.83,2.58-3.31,2-6.19,2h-23c-3.64,0-5.62-1-8-4V57C54.72,55.17,58.36,45.8,60.2,39.65v-8Z"/>
                         </svg>
                     </div>
                 </a>
-                <a href="#" class="cat-card">
-                    <img src="./imgs/icons8-instagram.svg" alt="comida">
+                <a href="#" class="card">
+                    <img   src="./imgs/burguer-de-picanha.jpg" alt="comida">
                     <h5>Big and juicy beef cheeseBurger</h5>
                     <div class="time row">
                         <div class="row">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 30 30" width="30px"
-                                height="30px">
-                                <path
-                                    d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
-                            </svg>
+                            <img class="icon" src="./imgs/icons/icons8-cronômetro-50.png"
+                                alt="time">
                             <p>30 minutes</p>
                         </div>
                         <div class="row">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 30 30" width="30px"
-                                height="30px">
-                                <path
-                                    d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
-                            </svg>
+                            <img class="icon" src="./imgs/icons/icons8-faca-e-spatchula-50.png"
+                            alt="talher">
                             <p>chicken</p>
                         </div>
                     </div>
                     <div class="like row active">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 30 30" width="30px"
-                            height="30px">
-                            <path
-                                d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
+                        <svg id="Layer_1" 
+                            data-name="Layer 1" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 122.88 122.88"><defs><style>.cls-1{fill:#ead3fd;}.cls-1,.cls-2{fill-rule:evenodd;}.cls-2{fill:#fff;}</style></defs><title>like-button</title>
+                            <path class="cls-1" d="M61.44,0A61.44,61.44,0,1,1,0,61.44,61.44,61.44,0,0,1,61.44,0Z"/><path class="cls-2" d="M32.5,53.39H43.06a2.18,2.18,0,0,1,2.17,2.18V84.52a2.19,2.19,0,0,1-2.17,2.18H32.5a2.19,2.19,0,0,1-2.18-2.18V55.57a2.19,2.19,0,0,1,2.18-2.18ZM60.2,31.68c1.14-5.82,10.66-.46,11.29,8.91a40.41,40.41,0,0,1-.81,9.93H84.29c5.65.23,10.59,4.28,7.1,10.93.8,2.9.92,6.3-1.24,7.65.27,4.57-1,7.41-3.37,9.65A11.42,11.42,0,0,1,85,84.63c-1.83,2.58-3.31,2-6.19,2h-23c-3.64,0-5.62-1-8-4V57C54.72,55.17,58.36,45.8,60.2,39.65v-8Z"/>
                         </svg>
                     </div>
                 </a>
+                <a href="#" class="card">
+                    <img   src="./imgs/burguer-de-picanha.jpg" alt="comida">
+                    <h5>Big and juicy beef cheeseBurger</h5>
+                    <div class="time row">
+                        <div class="row">
+                            <img class="icon" src="./imgs/icons/icons8-cronômetro-50.png"
+                                alt="time">
+                            <p>30 minutes</p>
+                        </div>
+                        <div class="row">
+                            <img class="icon" src="./imgs/icons/icons8-faca-e-spatchula-50.png"
+                            alt="talher">
+                            <p>chicken</p>
+                        </div>
+                    </div>
+                    <div class="like row active">
+                        <svg id="Layer_1" 
+                            data-name="Layer 1" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 122.88 122.88"><defs><style>.cls-1{fill:#ead3fd;}.cls-1,.cls-2{fill-rule:evenodd;}.cls-2{fill:#fff;}</style></defs><title>like-button</title>
+                            <path class="cls-1" d="M61.44,0A61.44,61.44,0,1,1,0,61.44,61.44,61.44,0,0,1,61.44,0Z"/><path class="cls-2" d="M32.5,53.39H43.06a2.18,2.18,0,0,1,2.17,2.18V84.52a2.19,2.19,0,0,1-2.17,2.18H32.5a2.19,2.19,0,0,1-2.18-2.18V55.57a2.19,2.19,0,0,1,2.18-2.18ZM60.2,31.68c1.14-5.82,10.66-.46,11.29,8.91a40.41,40.41,0,0,1-.81,9.93H84.29c5.65.23,10.59,4.28,7.1,10.93.8,2.9.92,6.3-1.24,7.65.27,4.57-1,7.41-3.37,9.65A11.42,11.42,0,0,1,85,84.63c-1.83,2.58-3.31,2-6.19,2h-23c-3.64,0-5.62-1-8-4V57C54.72,55.17,58.36,45.8,60.2,39.65v-8Z"/>
+                        </svg>
+                    </div>
+                </a>
+                
             </div>
         </section>
         <!--End Try-->
 
         <!--Subscribe-->
-        <section class="subscribe row container">
-            <div class="section-title">
-                <h2>Deliciousness to your inbox</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quibusdam natus quae quas error molestias omnis modi neque
-                    distinctio expedita pariatur voluptatum eaque laborum ab
-                    tempore voluptates dolore, adipisci eveniet numquam.</p>
-            </div>
-            <div class="subscribe-input row">
-                <div class="row">
-                    <input type="email" name id
-                        placeholder="Your email address...">
-                    <a href="#" class="sub-btn">Subscribe</a>
+        <section class="subscribe  row container">
+            <div>
+                <div class="section-title sub">
+                    <h2>Deliciousness to your inbox</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam natus quae quas error molestias omnis modi neque
+                        distinctio expedita pariatur voluptatum eaque laborum ab
+                        tempore voluptates dolore, adipisci eveniet numquam.</p>
+                </div>
+                <div class="subscribe-input row">
+                    <div class="row">
+                        <input type="email" name id
+                            placeholder="Your email address...">
+                        <a href="#" class="sub-btn">Subscribe</a>
+                    </div>
                 </div>
             </div>
+            
         </section>
         <!--End Subscribe-->
 
@@ -425,12 +438,12 @@
                     </a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
-                <ul class="row">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Receitas</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About Us</a></li>
+                <ul class=" row">
+                    <li><a class="menu" href="#">Home</a></li>
+                    <li><a class="menu" href="#">Receitas</a></li>
+                    <li><a class="menu" href="#">Blog</a></li>
+                    <li><a class="menu" href="#">Contato</a></li>
+                    <li><a class="menu" href="#">Sobre</a></li>
                 </ul>
             </div>
             <hr>
