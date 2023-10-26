@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*,*::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--cl-2--);
+
+}
+
+body {
+    --cl-1--:#fff;
+    --cl-2--:#000;
+    --cl-3--:#65067f;
+    --cl-4--:#8e53ff;
+    --cl-5--:linear-gradient(-45deg, rgba(202, 129, 242, 0)35%, #8e53ff 100%);
+    --cl-9--:linear-gradient(180deg, rgba(202, 129, 242, 0)35%, #cfbaf6 100%);
+    --cl-10--:#cfbaf6 ;
+    --cl-6--:rgba(0,0,0,0.6);
+    --cl-7--:rgba(231, 227, 226);
+    --cl-8--:rgba(241, 238, 243, 0.259);
+    background: var(--cli-1--);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+img { 
+    max-width: 100%;
+}
+
+h1, h2, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out ;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.row{
+    display: flex;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+/*Navigation*/
+
+header{
+    align-items: center;
+    gap: 2em;
+    padding: 2em 0;
+    fill: var(--cl-2--);
+}
+
+nav{
+    align-items: center;
+    flex-grow: 1;
+    gap: 2em;
+}
+
+nav ul {
+    align-items: center;
+    gap: 2em;
+}
+
+.primary-links {
+    margin: auto;
+}
+
+.secundary-links a{
+    fill:var(--cl-2--);
+}
+
+nav a, .footer-content ul a {
+    font-weight: 500;
+    font-size: 12px;
+ 
+}
+
+nav a:hover, .footer-content ul a:hover,
+ .footer-links ul a:hover {
+    color: var(--cl-4--);
+    fill: var(--cl-4--);
+ 
+}
+
+.menu{
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: var(--cl-4--);
+    fill:var(--cl-4--);
+    background: var(--cl-1--);
+    border: 1px solid var(--cl-4--);
+    padding: 0.5em 1.5em;
+    margin-right: 5px ;
+    align-items: center;
+    gap: 1em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.menu:hover {
+    background: var(--cl-1--);
+    box-shadow: 3px 3px 6px var(--cl-6--);
+    color: var(--cl-4--);
+}
+
+/*End Navigation/*
