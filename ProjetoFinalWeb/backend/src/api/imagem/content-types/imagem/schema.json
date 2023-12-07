@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "imagems",
+  "info": {
+    "singularName": "imagem",
+    "pluralName": "imagems",
+    "displayName": "Imagem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "alternativeText": {
+      "type": "string"
+    }
+  }
+}

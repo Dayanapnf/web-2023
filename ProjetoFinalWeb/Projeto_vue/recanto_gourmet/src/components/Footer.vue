@@ -39,7 +39,7 @@ footer {
 }
 
 footer h3 {
-  color: #759f41;
+  color: #070d00;
   text-align: center;
 }
 

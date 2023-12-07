@@ -11,7 +11,7 @@ export type Imagem = {
     alternativeText: string
 }
 
-export type Comentário = {
+export type Comentario = {
     descricao: string,
     nota: number
 }

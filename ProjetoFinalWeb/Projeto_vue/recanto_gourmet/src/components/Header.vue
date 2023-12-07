@@ -73,7 +73,7 @@
 }
 
 #menu ul li a {
-    color: #759F41;
+    color: #070d00;
     font-size: 22px;
 }
 
