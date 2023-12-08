@@ -10,10 +10,21 @@ class ReceitaService {
           params: {
             'pagination[page]': page,
             'pagination[pageSize]': pageSize,
-            populate: 'cover',
+            populate: 'imagem',
+          }
+        })
+        return data.data
+      }
+
+      async get(id: number): Promise<Receita> {
+        const { data } = await api.get(`/receitas/${id}`, {
+          params: {
+            populate: ['imagem', 'comentarios'],
           }
         })
         return data.data
       }
 
 }
+
+export const receitaService = new ReceitaService()

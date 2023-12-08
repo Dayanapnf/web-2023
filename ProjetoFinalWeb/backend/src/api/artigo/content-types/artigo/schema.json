@@ -28,11 +28,6 @@
         "videos",
         "audios"
       ]
-    },
-    "cover": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::imagem.imagem"
     }
   }
 }

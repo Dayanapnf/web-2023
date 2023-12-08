@@ -21,22 +21,19 @@
     "comentarios": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::comentario.comentario"
+      "target": "api::comentario.comentario",
+      "mappedBy": "receita"
     },
     "imagem": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::imagem.imagem"
-    },
-    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

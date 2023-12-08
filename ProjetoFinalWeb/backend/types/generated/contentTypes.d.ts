@@ -377,11 +377,6 @@ export interface ApiArtigoArtigo extends Schema.CollectionType {
     titulo: Attribute.String;
     descricao: Attribute.Text;
     imagem: Attribute.Media;
-    cover: Attribute.Relation<
-      'api::artigo.artigo',
-      'oneToOne',
-      'api::imagem.imagem'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -413,6 +408,11 @@ export interface ApiComentarioComentario extends Schema.CollectionType {
   attributes: {
     descricao: Attribute.Text;
     nota: Attribute.Integer;
+    receita: Attribute.Relation<
+      'api::comentario.comentario',
+      'manyToOne',
+      'api::receita.receita'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -481,12 +481,7 @@ export interface ApiReceitaReceita extends Schema.CollectionType {
       'oneToMany',
       'api::comentario.comentario'
     >;
-    imagem: Attribute.Relation<
-      'api::receita.receita',
-      'oneToOne',
-      'api::imagem.imagem'
-    >;
-    cover: Attribute.Media;
+    imagem: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -758,7 +753,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.role'
     >;
-    jwt: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

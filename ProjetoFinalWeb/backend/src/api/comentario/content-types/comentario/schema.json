@@ -16,6 +16,12 @@
     },
     "nota": {
       "type": "integer"
+    },
+    "receita": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::receita.receita",
+      "inversedBy": "comentarios"
     }
   }
 }
