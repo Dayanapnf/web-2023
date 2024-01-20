@@ -14,14 +14,35 @@
                     </picture>
                 </router-link>
             </div>
-
+            <div class="flex items-center gap-1">
+      <router-link
+        to="/buscar"
+        class="inline-flex items-center px-2 h-full transition-colors hover:bg-orange-500 hover:text-white"
+      >
+        Buscar Receitas
+      </router-link>
+      <router-link
+        to="/busca-por-iniciais"
+        class="inline-flex items-right px-2 h-full transition-colors hover:bg-orange-500 hover:text-white"
+      >
+        Buscar por Iniciais
+      </router-link>
+      <router-link
+        to="/ingredientes"
+        class="inline-flex items-center px-2 h-full transition-colors hover:bg-orange-500 hover:text-white"
+      >
+        Buscar por Ingredientes
+      </router-link>
+    </div>
+            <!--
             <nav>
                 <ul>
                     <li><router-link to="/">Receitas</router-link></li>
+                    <li> <router-link to="/buscar">Buscar Receitas</router-link></li>
                     <li><router-link to="/minhas-receitas">Minhas Receitas</router-link></li>
                 </ul>
             </nav>
-            <!--
+            
             <div class="entrar-header">
                 <picture>
                     <img v-if="!$store.state.usuarioLogado" src="../assets/icon-pessoa.png" alt="">

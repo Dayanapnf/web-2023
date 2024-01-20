@@ -4,7 +4,7 @@ import { isAxiosError } from 'axios'
 import { useRouter } from 'vue-router'
 import { type Receita } from '@/types'
 import { getUploadURL } from '@/composables/useUploadFile'
-import { ReceitaService } from '@/api/ReceitaService'
+import { receitaService } from '../api/ReceitaService'
 
 const props = defineProps<{
   id?: number

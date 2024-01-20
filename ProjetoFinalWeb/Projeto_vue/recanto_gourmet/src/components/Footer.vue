@@ -3,6 +3,7 @@
 <template>
   <footer>
     <div class="container">
+      <!--
       <div class="receber-novidades">
         <h3>Receba nossas novidades</h3>
 
@@ -11,7 +12,7 @@
           <button class="btn">Enviar</button>
         </div>
       </div>
-
+      -->
       <div class="redes-sociais">
         <h3>Redes Sociais</h3>
 
